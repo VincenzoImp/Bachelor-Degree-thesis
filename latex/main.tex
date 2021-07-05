@@ -91,7 +91,7 @@ L'elaborato propone, in tutti gli scenari esaminati, una soluzione per un'intell
 \label{chap:intro}
 Ultimamente è sempre più importante riuscire a migliorare l'uso dell'elettricità nelle abitazioni. Questo è possibile mediante algoritmi di \textbf{Demand Response} che consentono all'utente di gestire correttamente il proprio consumo energetico, per rispondere al meglio ai picchi di domanda o di offerta del mercato elettrico, utilizzando così in modo più efficiente le risorse energetiche.
 
-Il seguente elaborato si propone di studiare e migliorare un'algoritmo di Demand Response recentemente proposto, con l'obiettivo di integrare in questo, una corretta e intelligente gestione della carica di un veicolo elettrico plug-in. 
+Il seguente elaborato si propone di studiare e migliorare un algoritmo di Demand Response recentemente proposto, con l'obiettivo di integrare in questo, una corretta e intelligente gestione della carica di un veicolo elettrico plug-in. 
 
 Nell'elaborato dunque, vengono formulati dei modelli per l'implementazione del veicolo elettrico; questi vengono valutati al fine di presentare soluzioni intelligenti per la gestione della carica del veicolo.
 
@@ -401,7 +401,7 @@ Se comunque si è disposti a tollerare questa inefficienza a fronte di un rispar
 \subsubsection{Carico spostabile e divisibile}
 La seguente tipologia di modellazione della batteria del PEV ha senso di esistere grazie alla possibilità, da parte della batteria, di programmare e quindi posticipare la sua carica, ma anche e soprattutto grazie alla possibilità di \textbf{suddividere la carica in più intervalli distinti}. Quest'ultima proprietà non appartiene ai carichi spostabili che, per definizione, una volta avviati devono funzionare continuativamente per la durata $T_{b,ne}$. Questa osservazione permette quindi di modellare la batteria del PEV come carico spostabile e divisibile.
 
-Il processo decisionale di questa tipologia non fa uso dell'apprendimento per rinforzo multi-agente, ma bensì di un'algoritmo “naïf” che fa unicamente affidamento ai prezzi futuri previsti da ANN. L'idea alla base dell'algoritmo è quella di caricare la batteria nelle ore dell'intervallo $[T_{b,ini}, T_{b,end}]$ dove il prezzo dell'elettricità è minore secondo i prezzi futuri previsti. Di questa tipologia è di interesse sapere il consumo di energia, $T_{ne}$ e l'intervallo $[T_{b,ini}, T_{b,end}]$.
+Il processo decisionale di questa tipologia non fa uso dell'apprendimento per rinforzo multi-agente, ma bensì di un algoritmo “naïf” che fa unicamente affidamento ai prezzi futuri previsti da ANN. L'idea alla base dell'algoritmo è quella di caricare la batteria nelle ore dell'intervallo $[T_{b,ini}, T_{b,end}]$ dove il prezzo dell'elettricità è minore secondo i prezzi futuri previsti. Di questa tipologia è di interesse sapere il consumo di energia, $T_{ne}$ e l'intervallo $[T_{b,ini}, T_{b,end}]$.
 \begin{equation}
 E^{naïf}_{b,h} = I_{b,h} \cdot \min(e^{naïf}_{b,h}, C_b - SOC_{b,h-1})
 \end{equation}
@@ -1647,9 +1647,13 @@ Possiamo quindi affermare che, l'elaborato è riuscito a formulare dei modelli i
 
 
 \chapter*{Ringraziamenti}
+A conclusione di questo elaborato, desidero ringraziare il professor \textbf{Igor Melatti}, mio relatore, con il quale ho avuto modo di confrontarmi ben prima del periodo di tirocinio. Lo ringrazio per gli utili consigli lungo tutto il percorso e per la tanta pazienza dimostrata.
 
+Con orgoglio dedico questo traguardo a \textbf{mia nonna} (fonte d'infinita motivazione), per esserci sempre stata nonostante tutto. A lei va il mio più grande affetto. 
 
+Mi congratulo con \textbf{me stesso}, per l'instancabilità dimostrata durante tutto il percorso, e per la passione e la follia che mi hanno permesso di raggiungere obiettivi inaspettati.
 
+Ringrazio \textbf{Lucietti}, grande confidente dall'inizio alla fine. Ringrazio \textbf{Massimo Testa} e \textbf{Laura Franco}, ottimi punti di riferimento. Ringrazio \textbf{Maurizio} e tutti \textbf{i miei colleghi} di studio e di nuoto, con i quali ho condiviso quest'avventura. Infine ringrazio \textbf{la mia famiglia}, per la possibilità concessa che mi ha permesso di arrivare fino a qui.
 \backmatter
 \phantomsection
 
