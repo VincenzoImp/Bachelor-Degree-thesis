@@ -250,7 +250,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Vincenzo Imperati**
 - 🎓 Computer Science Student, Sapienza University of Rome
-- 📧 Email: imperati.1834930@studenti.uniroma1.it
 - 👨‍🏫 Supervisor: Prof. Igor Melatti
 
 ## 🙏 Acknowledgments
