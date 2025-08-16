@@ -1,9 +1,5 @@
 # Home Energy Management System with Reinforcement Learning
 
-[![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Research](https://img.shields.io/badge/research-bachelor%20thesis-orange.svg)](https://github.com/VincenzoImp/bachelor-degree-thesis)
-
 > An intelligent Home Energy Management System (HEMS) that uses Artificial Neural Networks and Multi-Agent Reinforcement Learning to optimize electric vehicle charging and household energy consumption.
 
 ## 🎯 Overview
@@ -102,23 +98,6 @@ The system was evaluated across three scenarios with different user priorities:
 - **Flexibility beats optimization** - ability to split charging sessions was crucial
 - **Context matters** - optimal strategy depends on user priorities
 - **Diminishing returns** - simple heuristics often sufficient
-
-## 📁 Project Structure
-
-```
-bachelor-degree-thesis/
-├── main.py                 # Main HEMS simulation engine
-├── get_newprofile.py      # Data preprocessing script
-├── show_results.py        # Results analysis and visualization
-├── comparison.py          # Model comparison utilities
-├── latex/                 # Thesis documentation (LaTeX)
-│   └── main.tex
-├── data/                  # Sample datasets
-│   ├── energy_prices.csv
-│   ├── pev_usage.csv
-│   └── home_profiles.csv
-└── README.md
-```
 
 ## 🔧 Implementation Details
 
